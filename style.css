@@ -1,9 +1,12 @@
 * { margin: 0; padding: 0;}
 a { text-decoration: none; }
-kbd { border: 1px solid red; display: inline-block; width: 4em; height: 4em; text-transform: uppercase; position: relative;}
-main .wrapper div:nth-child(2) { margin-left: 2em; }
-main .wrapper div:nth-child(3) { margin-left: 4em; }
-kbd button { position: absolute; bottom: 0; right: 0; display: none;}
+kbd { display: inline-block; width: 50px; height: 40px; text-transform: uppercase; position: relative; }
+main .wrapper div:nth-child(2) { margin-left: -22px; }
+main .wrapper div:nth-child(3) { margin-left: -88px; }
+kbd button { position: absolute; bottom: 0; right: 0; display: none; font-size: 12px;}
 kbd:hover button { display: block; }
 .wrapper { display: inline; }
 main { text-align: center; }
+.key { font-size: 16px; font-family: helvetica; border: 1px solid #373737;  border-radius: 7px;  box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;  background: linear-gradient(to bottom, #292929 0%,#111111 100%); color: #c5c5c5;  display: inline-flex; align-items: center; justify-content: center; }
+.row { margin: 20px; }
+.row .key { margin: 0 10px; }

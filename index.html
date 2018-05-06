@@ -17,11 +17,8 @@
 			'length': 3
 		}
 
-		var hash = {
-			'q': 'www.qq.com'
-		}
+		var hash = {'q': 'www.qq.com'}
 
-        
         //取出 localStorage 中zzz对应的hash
         hashInLocalStorage = JSON.parse(localStorage.getItem('zzz') || 'null');
         if (hashInLocalStorage) {
@@ -32,15 +29,16 @@
 		var i = 0;
 		while (i< keys['length']) {
             div = document.createElement('div');
+            div.className = 'row';
             main.appendChild(div);
             row = keys[i];
             var j = 0;
             while (j<row['length']) {
                 kbd = document.createElement('kbd');
                 kbd.textContent = row[j];
-
+                kbd.className = 'key';
                 button = document.createElement('button');
-                button.textContent = '编辑';
+                button.textContent = 'E';
                 button.id = row[j];
                 button.onclick = function (abc) {
                     key = abc.target.id;
