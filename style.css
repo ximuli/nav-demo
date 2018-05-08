@@ -1,12 +1,16 @@
 * { margin: 0; padding: 0;}
 a { text-decoration: none; }
-kbd { display: inline-block; width: 50px; height: 40px; text-transform: uppercase; position: relative; }
+kbd { display: inline-block; width: 50px; height: 40px; text-transform: uppercase; position: relative; cursor: pointer;}
 main .wrapper div:nth-child(2) { margin-left: -22px; }
 main .wrapper div:nth-child(3) { margin-left: -88px; }
 kbd button { position: absolute; bottom: 0; right: 0; display: none; font-size: 12px;}
 kbd:hover button { display: block; }
-.wrapper { display: inline; }
-main { text-align: center; }
-.key { font-size: 16px; font-family: helvetica; border: 1px solid #373737;  border-radius: 7px;  box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;  background: linear-gradient(to bottom, #292929 0%,#111111 100%); color: #c5c5c5;  display: inline-flex; align-items: center; justify-content: center; }
+.wrapper { display: inline; background-color: rgba(255,255,255,0.3); border-radius: 10px;}
+body { background: #ccc url(./wall.jpg) no-repeat center center;  background-size: cover;}
+body > main { height: 100vh; text-align: center; display: flex; justify-content: center; align-items: center;}
+.row .key { position: relative; margin: 0 10px; font-size: 16px; font-family: helvetica; border: 1px solid #373737;  border-radius: 7px;  
+	box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;  background: linear-gradient(to bottom, #292929 0%,#111111 100%); 
+	color: #c5c5c5; }
 .row { margin: 20px; }
-.row .key { margin: 0 10px; }
+.row .key span { position: absolute; left: 5px; top: 3px;}
+.row .key img { width: 16px; height: 16px; position: absolute; left: 5px; bottom: 3px; }
