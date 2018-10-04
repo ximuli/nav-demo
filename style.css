@@ -3,7 +3,7 @@ a { text-decoration: none; }
 kbd { display: inline-block; width: 50px; height: 40px; text-transform: uppercase; position: relative; cursor: pointer;}
 main .wrapper div:nth-child(2) { margin-left: -22px; }
 main .wrapper div:nth-child(3) { margin-left: -88px; }
-kbd button { position: absolute; bottom: 0; right: 0; display: none; font-size: 12px;}
+kbd button { position: absolute; bottom: 0; right: 0; display: none; font-size: 12px; }
 kbd:hover button { display: block; }
 .wrapper { display: inline; background-color: rgba(255,255,255,0.3); border-radius: 10px;}
 body { background: #ccc url(./wall.jpg) no-repeat center center;  background-size: cover;}
